@@ -24,7 +24,7 @@ The input is provided from stdin, and the output is displayed to stdout, followi
 6. `WRITE <arena_address> <size> <data>` - Writes <size> bytes from <data> to the address <arena_address>.
     * If <data> does not contain <size> bytes on the same line, reading will continue until the specified size is reached.
     * If the block does not contain <size> bytes starting from address <arena_address>, "Warning: size was bigger than the block size. Writing <size> characters.\n" will be displayed.
-7. `PMAP` - Traditionally, the pmap() call is used to visualize memory zones used by a process. These include .text, .bss, .data, .rodata, etc., but you will have to implement a simpler functionality.
+7. `PMAP` - Traditionally, the pmap() call is used to visualize memory zones used by a process.
     Information about existing blocks and miniblocks is displayed.
     The permission format is RWX. If any of these permissions are missing, they will be replaced with -.
 
